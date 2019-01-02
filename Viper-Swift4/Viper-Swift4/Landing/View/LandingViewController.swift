@@ -10,10 +10,11 @@ import UIKit
 import SideMenu
 class LandingViewController: UIViewController {
 
+    @IBOutlet var txt:UILabel!
     var presenter:LandingPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     
+        txt.text = String.init(format: "%d", Int.random(in: 0...20000))
     }
 }

@@ -18,17 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let navi:UINavigationController = self.window?.rootViewController as! UINavigationController
-        navi.pushViewController(LandingWireframe.createModule() , animated: true)
+        navi.pushViewController(LandingWireframe.createModule(rootnavi: navi) , animated: true)
     
         
         let deadlineTime = DispatchTime.now() + .seconds(1)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-            let sidemenu = SideMenuWireframe.createModule()
+            let sidemenu = SideMenuWireframe.createModule(rootnavi: navi)
             SideMenuManager.default.menuLeftNavigationController = sidemenu as? UISideMenuNavigationController
             SideMenuManager.default.menuRightNavigationController = nil
             SideMenuManager.default.menuAddPanGestureToPresent(toView: navi.navigationBar)
             SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: navi.view)
             SideMenuManager.default.menuFadeStatusBar = false
+            
         }
 
         return true

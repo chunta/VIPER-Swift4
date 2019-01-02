@@ -9,10 +9,15 @@
 import UIKit
 
 class LandingWireframe: NSObject {
- class func createModule()->UIViewController
+ 
+ static fileprivate var navigation:UINavigationController?
+    class func createModule(rootnavi:UINavigationController)->UIViewController
  {
+    navigation = rootnavi
+    
     let landingvctl:LandingViewController = LandingViewController.init()
     let presenter:LandingPresenter = LandingPresenter()
+    landingvctl.presenter = presenter
     presenter.view = landingvctl
     presenter.wireframe = LandingWireframe()
     presenter.interactor = LandingInteractor()
@@ -22,6 +27,7 @@ class LandingWireframe: NSObject {
     
  func pushToDetail(landing:Landing, view:UIViewController)
  {
- //view.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+ 
  }
+    
 }

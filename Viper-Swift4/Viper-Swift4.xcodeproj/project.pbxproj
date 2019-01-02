@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		28F0F492051A8EA97D52FD5E /* Pods_Viper_Swift4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3402B3505A44687CB86ED89F /* Pods_Viper_Swift4.framework */; };
+		A880E61721DD0099006E108B /* ArticleListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880E61621DD0099006E108B /* ArticleListEntity.swift */; };
+		A880E61921DD0169006E108B /* RealtimePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880E61821DD0169006E108B /* RealtimePresenter.swift */; };
+		A880E61C21DD01DC006E108B /* RealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880E61A21DD01DC006E108B /* RealTimeViewController.swift */; };
+		A880E61D21DD01DC006E108B /* RealTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A880E61B21DD01DC006E108B /* RealTimeViewController.xib */; };
+		A880E61F21DD01EF006E108B /* RealTimeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880E61E21DD01EF006E108B /* RealTimeWireframe.swift */; };
+		A880E62121DD02EB006E108B /* RealTimeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880E62021DD02EB006E108B /* RealTimeInteractor.swift */; };
+		A880E62421DD06FB006E108B /* RealTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880E62221DD06FB006E108B /* RealTimeCell.swift */; };
+		A880E62521DD06FB006E108B /* RealTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A880E62321DD06FB006E108B /* RealTimeCell.xib */; };
 		AC06B0BA21DC89F300536280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06B0B921DC89F300536280 /* AppDelegate.swift */; };
 		AC06B0BF21DC89F300536280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC06B0BD21DC89F300536280 /* Main.storyboard */; };
 		AC06B0C121DC89FA00536280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC06B0C021DC89FA00536280 /* Assets.xcassets */; };
@@ -43,6 +51,14 @@
 /* Begin PBXFileReference section */
 		3402B3505A44687CB86ED89F /* Pods_Viper_Swift4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_Swift4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4716F8ADA06542A546DF4FBA /* Pods-Viper-Swift4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-Swift4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viper-Swift4/Pods-Viper-Swift4.release.xcconfig"; sourceTree = "<group>"; };
+		A880E61621DD0099006E108B /* ArticleListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListEntity.swift; sourceTree = "<group>"; };
+		A880E61821DD0169006E108B /* RealtimePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimePresenter.swift; sourceTree = "<group>"; };
+		A880E61A21DD01DC006E108B /* RealTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeViewController.swift; sourceTree = "<group>"; };
+		A880E61B21DD01DC006E108B /* RealTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeViewController.xib; sourceTree = "<group>"; };
+		A880E61E21DD01EF006E108B /* RealTimeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeWireframe.swift; sourceTree = "<group>"; };
+		A880E62021DD02EB006E108B /* RealTimeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeInteractor.swift; sourceTree = "<group>"; };
+		A880E62221DD06FB006E108B /* RealTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeCell.swift; sourceTree = "<group>"; };
+		A880E62321DD06FB006E108B /* RealTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeCell.xib; sourceTree = "<group>"; };
 		AC06B0B621DC89F300536280 /* Viper-Swift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper-Swift4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC06B0B921DC89F300536280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC06B0BE21DC89F300536280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +122,61 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A880E61021DCFFFD006E108B /* RealTime */ = {
+			isa = PBXGroup;
+			children = (
+				A880E61521DD0071006E108B /* Entity */,
+				A880E61421DD0066006E108B /* Presenter */,
+				A880E61321DD0014006E108B /* View */,
+				A880E61221DD000E006E108B /* Wireframe */,
+				A880E61121DD0006006E108B /* Interactor */,
+			);
+			path = RealTime;
+			sourceTree = "<group>";
+		};
+		A880E61121DD0006006E108B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A880E62021DD02EB006E108B /* RealTimeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A880E61221DD000E006E108B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A880E61E21DD01EF006E108B /* RealTimeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A880E61321DD0014006E108B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A880E61A21DD01DC006E108B /* RealTimeViewController.swift */,
+				A880E61B21DD01DC006E108B /* RealTimeViewController.xib */,
+				A880E62221DD06FB006E108B /* RealTimeCell.swift */,
+				A880E62321DD06FB006E108B /* RealTimeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A880E61421DD0066006E108B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A880E61821DD0169006E108B /* RealtimePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A880E61521DD0071006E108B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A880E61621DD0099006E108B /* ArticleListEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		AC06B0AD21DC89F300536280 = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +200,9 @@
 		AC06B0B821DC89F300536280 /* Viper-Swift4 */ = {
 			isa = PBXGroup;
 			children = (
-				AC06B0F121DCA87500536280 /* SideMenu */,
 				AC06B0DB21DCA07700536280 /* Landing */,
-				AC06B0DC21DCA08400536280 /* Realtime */,
+				A880E61021DCFFFD006E108B /* RealTime */,
+				AC06B0F121DCA87500536280 /* SideMenu */,
 				AC06B0B921DC89F300536280 /* AppDelegate.swift */,
 				AC06B0BD21DC89F300536280 /* Main.storyboard */,
 				AC06B0C021DC89FA00536280 /* Assets.xcassets */,
@@ -161,13 +232,6 @@
 				AC06B0DD21DCA08F00536280 /* View */,
 			);
 			path = Landing;
-			sourceTree = "<group>";
-		};
-		AC06B0DC21DCA08400536280 /* Realtime */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Realtime;
 			sourceTree = "<group>";
 		};
 		AC06B0DD21DCA08F00536280 /* View */ = {
@@ -354,6 +418,8 @@
 				AC06B10A21DCB46600536280 /* SideMenuViewController.xib in Resources */,
 				AC06B0DA21DC9C1500536280 /* MainView.xib in Resources */,
 				AC06B10E21DCB9D100536280 /* SideMenuTableCell.xib in Resources */,
+				A880E62521DD06FB006E108B /* RealTimeCell.xib in Resources */,
+				A880E61D21DD01DC006E108B /* RealTimeViewController.xib in Resources */,
 				AC06B0C121DC89FA00536280 /* Assets.xcassets in Resources */,
 				AC06B0BF21DC89F300536280 /* Main.storyboard in Resources */,
 			);
@@ -432,16 +498,22 @@
 			files = (
 				AC06B0BA21DC89F300536280 /* AppDelegate.swift in Sources */,
 				AC06B0E921DCA17100536280 /* LandingViewController.swift in Sources */,
+				A880E62421DD06FB006E108B /* RealTimeCell.swift in Sources */,
 				AC06B10021DCAD7900536280 /* SideMenuEntity.swift in Sources */,
 				AC06B0EC21DCA1AD00536280 /* LandingPresenter.swift in Sources */,
 				AC06B10921DCB46600536280 /* SideMenuViewController.swift in Sources */,
 				AC06B0F021DCA20100536280 /* Landing.swift in Sources */,
 				AC06B0EE21DCA1C000536280 /* LandingInteractor.swift in Sources */,
+				A880E61F21DD01EF006E108B /* RealTimeWireframe.swift in Sources */,
 				AC06B0FE21DCAD6800536280 /* SideMenuInteractor.swift in Sources */,
 				AC06B10D21DCB9D100536280 /* SideMenuTableCell.swift in Sources */,
+				A880E61721DD0099006E108B /* ArticleListEntity.swift in Sources */,
+				A880E62121DD02EB006E108B /* RealTimeInteractor.swift in Sources */,
 				AC06B10221DCAD8800536280 /* SideMenuPresenter.swift in Sources */,
 				AC06B0FC21DCABFB00536280 /* SideMenuWireframe.swift in Sources */,
 				AC06B0E321DCA0D300536280 /* LandingWireframe.swift in Sources */,
+				A880E61921DD0169006E108B /* RealtimePresenter.swift in Sources */,
+				A880E61C21DD01DC006E108B /* RealTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,15 +677,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = NEEK5ZHF5F;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
 				INFOPLIST_FILE = "Viper-Swift4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appledaily.devtest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.devtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ForDeveloperTest;
+				PROVISIONING_PROFILE_SPECIFIER = DevTest;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -625,15 +697,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = NEEK5ZHF5F;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
 				INFOPLIST_FILE = "Viper-Swift4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appledaily.devtest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.devtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ForDeveloperTest;
+				PROVISIONING_PROFILE_SPECIFIER = DevTest;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

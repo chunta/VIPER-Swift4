@@ -8,6 +8,11 @@
 
 import UIKit
 
-class SideMenuEntity: NSObject {
-
+struct SideMenuEntity {
+    
+    var name:String
+    init(name:String)
+    {
+        self.name = name
+    }
 }

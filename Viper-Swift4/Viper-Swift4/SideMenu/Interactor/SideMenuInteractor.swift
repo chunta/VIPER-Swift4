@@ -12,9 +12,10 @@ class SideMenuInteractor: NSObject {
     weak var presenter:SideMenuPresenter?
     
     func loadSideMenuList() {
-        DispatchQueue.delay(.seconds(1)) {
-            print("This is after delay")
-            presenter?.didLoadSideMenuList(list: ["1","2","3"])
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+            self.presenter?.didLoadSideMenuList(list: [SideMenuEntity.init(name: "首頁"),
+                                                       SideMenuEntity.init(name: "即時"),
+                                                       SideMenuEntity.init(name: "日報")])
         }
     }
 }
